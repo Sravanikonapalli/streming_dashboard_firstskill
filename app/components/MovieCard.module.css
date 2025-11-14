@@ -1,0 +1,12 @@
+.card {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.poster {
+  border-radius: 4px;
+}

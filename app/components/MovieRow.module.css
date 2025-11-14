@@ -1,0 +1,22 @@
+.row {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 20px;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}

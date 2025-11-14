@@ -1,0 +1,97 @@
+.page {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bannerImage {
+  object-fit: cover;
+}
+
+.bannerOverlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.bannerOverlay h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Info Row (runtime, rating, genre) */
+.infoRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.infoBox {
+  background: #222;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.plot {
+  font-size: 18px;
+  line-height: 1.5;
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  font-size: 16px;
+}
+
+.detailsGrid p {
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh;
+  }
+
+  .bannerOverlay h1 {
+    font-size: 24px;
+  }
+
+  .infoBox {
+    font-size: 14px;
+  }
+
+  .plot {
+    font-size: 16px;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.bold{
+  color: rgb(221, 149, 149);
+}
